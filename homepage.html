@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body background="C:\Users\Prof.Katana\Desktop\SFE\4015\home.jpg">
     <!-- Header with Title and Dropdown Menu -->
     <header>
         <div class="header-left">
@@ -30,15 +30,15 @@
     <!-- Main Content -->
     <div class="container">
         <h2>Welcome to Your Dashboard!</h2>
-        <p>Welcome, [Username]! You’re successfully logged in.</p>
-        <p>Explore our services and manage your account.</p>
+        <p>Welcome to Future Homes.</p>
+        <p>Explore our services and find a yourself a house.</p>
     </div>
 
     <!-- About Us Section -->
     <div class="container" id="about">
         <h2>About Us</h2>
-        <p>Future Homes is dedicated to helping you find the perfect property, whether you're looking to buy, sell, or rent. We provide a seamless experience to connect buyers and sellers.</p>
-        <button onclick="location.href='about.html'" class="btn">More About Us</button>
+        <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px; " >Future Homes is dedicated to helping you find the perfect property, whether you're looking to buy, sell, or rent. We provide a seamless experience to connect buyers and sellers.</p>
+        <button onclick="location.href='aboutus.html'" class="btn">More About Us</button>
     </div>
 
     <!-- Explore Houses Section -->
@@ -47,35 +47,23 @@
         <p>Discover a variety of properties tailored to your needs.</p>
         <div class="property-list">
             <!-- Example Property Cards -->
-            <div class="property-card">
-                <img src="images/house1.jpg" alt="House 1">
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home2.jpg" alt="House 1">
                 <h3>3-Bedroom House</h3>
                 <p>Located in the city center, perfect for families.</p>
             </div>
-            <div class="property-card">
-                <img src="images/house2.jpg" alt="House 2">
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home4.jpg" alt="House 2">
                 <h3>Luxury Apartment</h3>
                 <p>Modern apartment with stunning views.</p>
             </div>
-            <div class="property-card">
-                <img src="images/house3.jpg" alt="House 3">
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\hom3.jpg" alt="House 3">
                 <h3>Cozy Cottage</h3>
                 <p>Charming cottage in a quiet neighborhood.</p>
             </div>
         </div>
-        <button onclick="location.href='explore.html'" class="btn">Explore More</button>
-    </div>
-
-    <!-- Contact Us Section -->
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us using the form below:</p>
-        <form action="submit_contact.html" method="POST">
-            <input type="text" id="contact-name" name="contact-name" placeholder="Your Name" required>
-            <input type="email" id="contact-email" name="contact-email" placeholder="Your Email" required>
-            <textarea id="contact-message" name="contact-message" placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <button onclick="location.href='rent.html'" class="btn">Explore More</button>
     </div>
 
     <!-- JavaScript for Dropdown Toggle -->
