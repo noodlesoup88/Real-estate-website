@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Future Homes</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body background="C:\Users\Prof.Katana\Desktop\SFE\4015\home.jpg">
+    <!-- Header with Title and Dropdown Menu -->
+    <header>
+        <div class="header-left">
+            <h1>Future Homes</h1>
+        </div>
+        <div class="header-right">
+            <div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="saves.html">Saves</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Welcome to Your Dashboard!</h2>
+        <p>Welcome to Future Homes.</p>
+        <p>Explore our services and find a yourself a house.</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px; " >Future Homes is dedicated to helping you find the perfect property, whether you're looking to buy, sell, or rent. We provide a seamless experience to connect buyers and sellers.</p>
+        <button onclick="location.href='aboutus.html'" class="btn">More About Us</button>
+    </div>
+
+    <!-- Explore Houses Section -->
+    <div class="container" id="explore">
+        <h2>Explore Houses</h2>
+        <p>Discover a variety of properties tailored to your needs.</p>
+        <div class="property-list">
+            <!-- Example Property Cards -->
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home2.jpg" alt="House 1">
+                <h3>3-Bedroom House</h3>
+                <p>Located in the city center, perfect for families.</p>
+            </div>
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home4.jpg" alt="House 2">
+                <h3>Luxury Apartment</h3>
+                <p>Modern apartment with stunning views.</p>
+            </div>
+            <div class="property-card" style="background-color: bisque;">
+                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\hom3.jpg" alt="House 3">
+                <h3>Cozy Cottage</h3>
+                <p>Charming cottage in a quiet neighborhood.</p>
+            </div>
+        </div>
+        <button onclick="location.href='rent.html'" class="btn">Explore More</button>
+    </div>
+
+    <!-- JavaScript for Dropdown Toggle -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
