@@ -5,91 +5,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Future Homes</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+        
+        #logo img {
+            width: 100px;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 200px;
+            list-style: none;
+        }
+        
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul a:hover {
+            text-decoration: underline green;
+        
+        }
+        #hero-section{
+            background: url(./images/home8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 100px;
+            padding-bottom: 300px;
+            color: white;
+        }
+        #hero-section span{
+            color:rgb(64, 201, 64);
+        }
+
+        #about{
+            text-align: center;
+            padding: 150px ;
+            margin-bottom: 100px;
+            color: white;
+            background-color: black;
+        }
+        h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        #about p{
+            width: 600px;
+            margin: 100px auto;
+            line-height: 1.5;
+        }
+        button{
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #explore{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .property-list{
+            display: flex;
+            gap: 20px;
+        }
+        .property-list img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .property-card img{
+            width: 400px;
+
+        }
+        .property-card h3, p{
+            padding-left: 30px;
+        }
+      
+        .company-footer{
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        h2{
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        footer p{
+            text-align: center;
+        }
+        .media-icons{
+            margin: 10px 20px;
+        }
+        
+    </style>
 </head>
 
-<body background="C:\Users\Prof.Katana\Desktop\SFE\4015\home.jpg">
-    <!-- Header with Title and Dropdown Menu -->
+<body>
+
     <header>
-        <div class="header-left">
-            <h1>Future Homes</h1>
+        <div id="logo">
+            <img src="./images/logo.png" alt="company logo">
+
         </div>
-        <div class="header-right">
-            <div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
-            <div class="dropdown-menu" id="dropdownMenu">
-                <a href="profile.html">Profile</a>
-                <a href="settings.html">Settings</a>
-                <a href="saves.html">Saves</a>
-                <a href="about.html">About Us</a>
-                <a href="login.html">Logout</a>
-            </div>
-        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="rentPage.html">Rent</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h2>Welcome to Your Dashboard!</h2>
-        <p>Welcome to Future Homes.</p>
-        <p>Explore our services and find a yourself a house.</p>
-    </div>
+    <main>
+        <section id="hero-section">
+            <h1>Welcome to <span>Future Homes.</span></h1>
+            <p>Explore our services and find  yourself a house.</p>
+        </section>
 
-    <!-- About Us Section -->
-    <div class="container" id="about">
-        <h2>About Us</h2>
-        <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px; " >Future Homes is dedicated to helping you find the perfect property, whether you're looking to buy, sell, or rent. We provide a seamless experience to connect buyers and sellers.</p>
-        <button onclick="location.href='aboutus.html'" class="btn">More About Us</button>
-    </div>
 
-    <!-- Explore Houses Section -->
-    <div class="container" id="explore">
-        <h2>Explore Houses</h2>
-        <p>Discover a variety of properties tailored to your needs.</p>
-        <div class="property-list">
-            <!-- Example Property Cards -->
-            <div class="property-card" style="background-color: bisque;">
-                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home2.jpg" alt="House 1">
-                <h3>3-Bedroom House</h3>
-                <p>Located in the city center, perfect for families.</p>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px; ">Future
+                Homes is dedicated to helping you find the perfect property, whether you're looking to buy, sell, or
+                rent. We provide a seamless experience to connect buyers and sellers.</p>
+            <button onclick="location.href='aboutus.html'" class="btn-about">More About Us</button>
+        
+        </section>
+            
+
+        
+        <section id="explore">
+            <h2>Explore Houses</h2>
+            
+            <div class="property-list">
+                
+                <div class="property-card" style="background-color: bisque;">
+                    <img src="./images/home.jpg" alt="House 1">
+                    <h3>2-Bedroom House</h3>
+                    <p>Located in the city center, perfect for families.</p>
+                </div>
+                <div class="property-card" style="background-color: bisque;">
+                    <img src="./images/home4.jpg" alt="House 2">
+                    <h3>Luxury Apartment</h3>
+                    <p>Modern apartment with stunning views.</p>
+                </div>
+                <div class="property-card" style="background-color: bisque;">
+                    <img src="./images/hom3.jpg" alt="House 3">
+                    <h3>Cozy Cottage</h3>
+                    <p>Charming cottage in a quiet neighborhood.</p>
+                </div>
+                
             </div>
-            <div class="property-card" style="background-color: bisque;">
-                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\home4.jpg" alt="House 2">
-                <h3>Luxury Apartment</h3>
-                <p>Modern apartment with stunning views.</p>
+            <button onclick="location.href='rent.html'" class="btn">Explore More</button>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="company-footer">
+
+            <div class="reach-us">
+                <h2>Get in touch</h2>
+                <div class="media-platforms">
+
+                    <div class="media-icons">
+                        <img src="./images/facebook (2).png" alt="fb">
+                        <img src="./images/instagram.png" alt="insta">
+                        <img src="./images/twitter.png" alt="X">
+                    </div>
+
+                    <div class="media-icons">
+                        <img src="./images/linkedin (1).png" alt="LinkedIn">
+                        <img src="./images/tiktok.png" alt="Tiktok">
+                        <img src="./images/phone-call.png" alt="phone">
+                    </div>
+
+
+
+                </div>
             </div>
-            <div class="property-card" style="background-color: bisque;">
-                <img src="C:\Users\Prof.Katana\Desktop\SFE\4015\hom3.jpg" alt="House 3">
-                <h3>Cozy Cottage</h3>
-                <p>Charming cottage in a quiet neighborhood.</p>
+            <div class="company-name">
+                <h2>Future Homes</h2>
+                <p>Mirema drive RD, Roysambu</p>
+                <p>Nairobi, Kenya</p>
+                <p>+254761883980</p>
+                <p>info@futurehomes.co.ke</p>
             </div>
+
+
         </div>
-        <button onclick="location.href='rent.html'" class="btn">Explore More</button>
-    </div>
 
-    <!-- JavaScript for Dropdown Toggle -->
-    <script>
-        function toggleDropdown() {
-            var dropdown = document.getElementById("dropdownMenu");
-            dropdown.classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.menu-icon')) {
-                var dropdowns = document.getElementsByClassName("dropdown-menu");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+        <p>Copyright © 2024 Future Homes</p>
+    </footer>
+    
 </body>
-
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> 85644f64adda1fd02b4aa2ced2f19b0b1123f4fc
