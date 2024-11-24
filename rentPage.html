@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Page</title>
+
+    <style>
+        body{
+            font-size: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        #logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 200px;
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul a:hover{
+            text-decoration: underline green;
+            
+        }
+
+        h1 {
+            text-align: center;
+            margin: 80px auto;
+        }
+
+        .house-cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            
+        }
+
+        .house-description {
+            display: flex;
+            align-items: start;
+            gap: 200px;
+            
+        }
+        .house-description img{
+            width: 400px;
+            height: 250px;
+        }
+
+        .description, label{
+            font-weight: bold;
+        }
+        .line-separator{
+            width: 80%;
+            height: 1px;
+            background-color: black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10%;
+        }
+        .company-footer{
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        h2{
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        footer p{
+            text-align: center;
+        }
+        .media-icons{
+            margin: 10px 20px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="./images/logo.png" alt="company logo">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#rent">Rent</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>FOR RENT</h1>
+
+        <section>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/house5.jpg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">2 Bedroom Duplex for Rent</p>
+                        <p>Kilimani</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 130 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home6.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Furnished Studio-Westlands</p>
+                        <p>Muthangari Drive</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 110 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home7.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Premier 2 Bedroom Apartments</p>
+                        <p>Karen</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 220 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home8.jpg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Executive unfurnished 2 Bedroom</p>
+                        <p>Kilimani</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 100 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home9.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Unfurnished Apartment-Westlands</p>
+                        <p>Muthangari Drive</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 130 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home10.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Furnished Studio Apartment</p>
+                        <p>Lavington</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 110 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+         
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home11.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">Luxurious 1 Bedroom Unfurnished</p>
+                        <p>Roysambu</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 70 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home12.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">3 Bedroom off Rhapta Road</p>
+                        <p>Rhapta Road</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 220 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home13.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">1 Bedroom Apartment</p>
+                        <p>Kileleshwa</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 140 000</p>
+                </div>
+            </div>
+            <div class="line-separator"></div>
+            <div class="house-cards">
+                <div class="house-description">
+                    <div>
+                        <img src="./images/home14.jpeg" alt="house-image">
+                    </div>
+                    <div>
+                        <p class="description">1 Bedroom Apartment for Rent</p>
+                        <p>Limuru Road</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <label>Price:</label>
+                    <p>Ksh. 150 000</p>
+                </div>
+            </div>
+            
+
+
+        </section>
+    </main>
+
+  
+    <footer>
+        <div class="company-footer">
+
+            <div class="reach-us">
+                <h2>Get in touch</h2>
+                <div class="media-platforms">
+
+                    <div class="media-icons">
+                        <img src="./images/facebook (2).png" alt="fb">
+                        <img src="./images/instagram.png" alt="insta">
+                        <img src="./images/twitter.png" alt="X">
+                    </div>
+
+                    <div class="media-icons">
+                        <img src="./images/linkedin (1).png" alt="LinkedIn">
+                        <img src="./images/tiktok.png" alt="Tiktok">
+                        <img src="./images/phone-call.png" alt="phone">
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="company-name">
+                <h2>Future Homes</h2>
+                <p>Mirema drive RD, Roysambu</p>
+                <p>Nairobi, Kenya</p>
+                <p>+254761883980</p>
+                <p>info@futurehomes.co.ke</p>
+            </div>
+
+
+        </div>
+
+        <p>Copyright © 2024 Future Homes</p>
+    </footer>
+
+</body>
+
+</html>
