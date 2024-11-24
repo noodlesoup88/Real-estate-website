@@ -1,6 +1,97 @@
-<html>
-<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Future Homes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body background="home.jpg">
+    <!-- Header with Title and Dropdown Menu -->
+    <header>
+        <div class="header-left">
+            <h1>Future Homes</h1>
+        </div>
+        <div class="header-right">
+            <div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="homepage.html">homepage</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="saves.html">Saves</a>
+                <a href="aboutus.html">About Us</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main About Us Content -->
+    <div class="container" id="about-us-detailed">
+        <h2>About Future Homes</h2>
+        <p style="font-size: 18px; line-height: 1.6;">
+            Future Homes is a pioneering real estate platform dedicated to transforming the way people find and interact with their dream properties. Founded in 2024, our mission is to simplify the complex process of real estate transactions by providing innovative, user-friendly solutions.
+        </p>
+
+        <div class="our-mission" style="margin-top: 20px;">
+            <h3>Our Mission</h3>
+            <p style="font-size: 16px; line-height: 1.5;">
+                To empower individuals and families to find their perfect homes by leveraging cutting-edge technology, personalized service, and a deep understanding of local real estate markets.
+            </p>
+        </div>
+
+        <div class="our-values" style="margin-top: 20px;">
+            <h3>Our Core Values</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>🏡 Transparency</li>
+                <li>🤝 Integrity</li>
+                <li>💡 Innovation</li>
+                <li>🌟 Customer-First Approach</li>
+            </ul>
+        </div>
+
+        <div class="our-team" style="margin-top: 20px;">
+            <h3>Our Team</h3>
+            <p style="font-size: 16px; line-height: 1.5;">
+                Our team consists of experienced real estate professionals, technology experts, and customer service specialists who are passionate about helping you find your perfect home.
+            </p>
+        </div>
+
+        <div class="our-services" style="margin-top: 20px;">
+            <h3>Our Services</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>🔍 Property Search</li>
+                <li>🤝 Buying Assistance</li>
+                <li>📝 Selling Support</li>
+                <li>🏘️ Rental Listings</li>
+                <li>📊 Market Analysis</li>
+            </ul>
+        </div>
+
+        <button onclick="location.href='contact.html'" class="btn" style="margin-top: 20px;">
+            Contact Us
+        </button>
+    </div>
+
+    <!-- JavaScript for Dropdown Toggle -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
 </html>
-=======
-</html>
->>>>>>> 85644f64adda1fd02b4aa2ced2f19b0b1123f4fc
