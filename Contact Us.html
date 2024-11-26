@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Future Homes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        #logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 200px;
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            text-decoration: underline green;
+        }
+
+        .contact-hero {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+            margin-bottom: 50px;
+        }
+
+        .contact-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-hero span {
+            color: rgb(64, 201, 64);
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-form {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        button {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-info h3 {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 20px;
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: green;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        .company-footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .media-icons {
+            margin: 10px 20px;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul {
+                gap: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./images/logo.png" alt="company logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="rentPage.html">Rent</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Get in Touch with <span>Future Homes</span></h1>
+            <p>We're here to help you find your perfect home</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>Mirema drive RD, Roysambu</p>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+254761883980</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@futurehomes.co.ke</p>
+                </div>
+                <div class="info-item">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="company-footer">
+            <div class="reach-us">
+                <h2>Get in touch</h2>
+                <div class="media-platforms">
+                    <div class="media-icons">
+                        <img src="./images/facebook (2).png" alt="fb">
+                        <img src="./images/instagram.png" alt="insta">
+                        <img src="./images/twitter.png" alt="X">
+                    </div>
+                    <div class="media-icons">
+                        <img src="./images/linkedin (1).png" alt="LinkedIn">
+                        <img src="./images/tiktok.png" alt="Tiktok">
+                        <img src="./images/phone-call.png" alt="phone">
+                    </div>
+                </div>
+            </div>
+            <div class="company-name">
+                <h2>Future Homes</h2>
+                <p>Mirema drive RD, Roysambu</p>
+                <p>Nairobi, Kenya</p>
+                <p>+254761883980</p>
+                <p>info@futurehomes.co.ke</p>
+            </div>
+        </div>
+        <p>Copyright © 2024 Future Homes</p>
+    </footer>
+</body>
+</html>
